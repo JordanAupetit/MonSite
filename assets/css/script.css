@@ -17,6 +17,53 @@
     /*box-shadow: 0 0 5px rgba(0,0,0,0.2);*/
 }
 
+.page-horizontal-slider {
+    position: relative; 
+    float: left; 
+    background: #E5FAFC; 
+}
+
+body {
+    padding-top: 50px;
+}
+
+.navbar{
+    height: 50px; 
+}
+
+.navbar-jordan {
+    background:#262621;
+}
+
+.navbar-items {
+    height: 50px; 
+    width: 150px; 
+    text-align: center; 
+    font-size: 18px;
+}
+
+.navbar-items > a{
+    color: #E5FAFC;
+}
+
+.navbar-items > a:hover{
+    color: #262621;
+    background-color: #E5FAFC  !important;
+}
+
+.round-active {
+    border: 0px solid #000;
+    -webkit-border-radius: 25px;
+    -moz-border-radius:    25px; 
+    border-radius:         25px; 
+}
+
+/* .header-container {
+    background:white; 
+    height: 60px; 
+    position: fixed;
+} */
+
 
 /* === ALL === */
 

@@ -18,3 +18,5 @@
     <script type="text/javascript" src="<?php echo base_url();?>assets/js/script.js" ></script>
 </head>
 <body>
+
+    <?php $this->load->view("templates/navbar"); ?>
