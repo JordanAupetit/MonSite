@@ -38,11 +38,12 @@
 |
 */
 
-$route['default_controller'] = "welcome";
-$route['404_override'] = '';
+/*$route['default_controller'] = "welcome";
+$route['404_override'] = '';*/
 
 $route['default_controller'] = "frontend";
 $route['404_override'] = '';
+
 /*
 $route[''] = 'frontend';
 $route['accueil'] = 'frontend/index';

@@ -12,5 +12,13 @@ class Frontend extends CI_Controller {
 		$this->load->view("templates/footer");
 	}
 
+	public function webwatcher()
+	{
+		$data = array('titre' => 'webwatcher');
+		$this->load->view("templates/header", $data);
+		$this->load->view('webwatcher');
+		$this->load->view("templates/footer");
+	}
+
 }
 

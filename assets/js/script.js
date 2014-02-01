@@ -1,15 +1,49 @@
 
 $(function() { 
 
-    /*var protectImage = function(){
-
-    };
-
-    protectImage();*/
-
-
-    /*$('.filters-item').click(function (){
-
-    });*/
+	$('#highchart_container').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: true
+        },
+        title: {
+            text: 'Browser market shares at a specific website, 2010'
+        },
+        tooltip: {
+    	    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: false, // changed
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    color: '#000000',
+                    connectorColor: '#000000',
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Browser share',
+            data: [
+                ['Firefox',   45.0],
+                ['IE',       26.8],
+                /*{
+                    name: 'Chrome',
+                    y: 12.8,
+                    sliced: true,
+                    selected: true
+                },*/
+                ['Chrome', 12.8],
+                ['Safari',    8.5],
+                ['Opera',     6.2],
+                ['Others',   0.7]
+            ]
+        }]
+    });
+	
 
 });

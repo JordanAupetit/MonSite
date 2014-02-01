@@ -15,6 +15,8 @@
     <script type="text/javascript" src="<?php echo base_url();?>assets/js/masonry.min.js" ></script>
     <script type="text/javascript" src="<?php echo base_url();?>assets/js/magnific-popup.min.js" ></script>
     <script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery.nailthumb.1.1.min.js" ></script>
+    <script type="text/javascript" src="<?php echo base_url();?>assets/js/highcharts/highcharts.js" ></script>
+    <script type="text/javascript" src="<?php echo base_url();?>assets/js/highcharts/modules/exporting.js" ></script>
     <script type="text/javascript" src="<?php echo base_url();?>assets/js/script.js" ></script>
 </head>
 <body>
