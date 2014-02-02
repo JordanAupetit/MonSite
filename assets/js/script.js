@@ -1,7 +1,7 @@
 
 $(function() { 
 
-	$('#highchart_container').highcharts({
+	/*$('.highchart_container').highcharts({
         chart: {
             plotBackgroundColor: null,
             plotBorderWidth: null,
@@ -31,26 +31,31 @@ $(function() {
             data: [
                 ['Firefox',   45.0],
                 ['IE',       26.8],
-                /*{
-                    name: 'Chrome',
-                    y: 12.8,
-                    sliced: true,
-                    selected: true
-                },*/
                 ['Chrome', 12.8],
                 ['Safari',    8.5],
                 ['Opera',     6.2],
                 ['Others',   0.7]
             ]
         }]
-    });
+    });*/
 	
 
 	//alert("Width : " + $(window).width() + " Height : " + $(".navbar").height());
 
+    var duration_animation = 2000;
+    var nb_page = $(".navbar-items").length;
+    var window_width = $(window).width();
+    var window_height = $(window).height();
+
 	$(".page-horizontal-slider").css({
-								    width : $(window).width(), 
-								    height : ($(window).height() - 55)
+								    width : window_width, 
+								    height : (window_height - 55)
 								});
+
+    $(".navbar-items").click(function(){
+        var page_click =$(".navbar-items").index($(this));
+
+        $(".pages-slider").stop().animate({left: -(page_click * window_width)}, duration_animation, function(){});        
+    });
 
 });
