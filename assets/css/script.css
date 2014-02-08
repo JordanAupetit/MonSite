@@ -64,6 +64,15 @@ body {
     background-color: transparent !important;
 }
 
+.project-brand {
+    color: #F28322;
+    font-size: 22px;
+}
+
+.project-brand:hover {
+    color: #F28322;
+}
+
 .round-active {
     border: 0px solid #000;
     -webkit-border-radius: 25px;
@@ -74,7 +83,7 @@ body {
     height:8px; 
     background:#F22973; 
     position:absolute;
-    left:50%;
+    /* left:50%;*/
     margin-left:-4px;
     bottom:4px; 
 }
