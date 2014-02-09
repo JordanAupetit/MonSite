@@ -9,7 +9,7 @@
             <?php $this->load->view("pages/jordan"); ?>
         </div>
 
-        <div class="page-horizontal-slider">
+        <div class="page-horizontal-slider" style="overflow:auto;">
             <?php $this->load->view("pages/projets"); ?>
         </div>
 

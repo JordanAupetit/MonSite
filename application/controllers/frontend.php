@@ -4,7 +4,7 @@ class Frontend extends CI_Controller {
 
 	public function index()
 	{
-		$data = array('titre' => 'Accueil');
+		$data = array('titre' => ''); // Vide
 		//$this->parser->parse('accueil', $data);
 		//$this->load->view('navbar');
 		$this->load->view("templates/header", $data);

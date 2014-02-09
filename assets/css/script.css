@@ -30,7 +30,7 @@
 }
 
 .slider-container {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -101,11 +101,24 @@ body {
     color: #F22973;
 }
 
+.btn-accueil:focus {
+    background: #262621;
+    color: #E5FAFC;
+}
+
 /* .header-container {
     background:white; 
     height: 60px; 
     position: fixed;
 } */
+
+.item-projet {
+    height:200px;
+    /* width:300px;
+    margin:10px; */
+    background:#262621;
+    cursor:pointer;
+}
 
 
 /* === ALL === */
