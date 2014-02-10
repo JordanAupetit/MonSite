@@ -20,7 +20,8 @@
 .page-horizontal-slider {
     position: relative; 
     float: left; 
-    background: #E5FAFC; 
+    /* background: #E5FAFC; */ 
+    background: white; 
 }
 
 .pages-slider {
